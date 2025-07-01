@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.12"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.calculadoracolaborativa.MultiplicarController">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Multiplicación de dos números" />
+    <TextField fx:id="campo1" promptText="Número 1" />
+    <TextField fx:id="campo2" promptText="Número 2" />
+    <Button text="Multiplicar" onAction="#calcularMultiplicacion" />
+    <Label fx:id="resultado" text="Resultado: " />
+    <Button text="Volver" onAction="#volverMenu" />
+</VBox>
