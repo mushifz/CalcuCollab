@@ -25,9 +25,8 @@ public class HelloController {
     }
 
     // Dividir (Raul :v)
-    @FXML
-    protected void onDivisionButtonClick() {
-        abrirVentana("division.fxml", "Division");
+    @FXML protected void onDivisionButtonClick() {
+        abrirVentana("division.fxml", "División");
     }
 
 
