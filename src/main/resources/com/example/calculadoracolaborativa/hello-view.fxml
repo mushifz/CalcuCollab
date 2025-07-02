@@ -4,14 +4,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" maxHeight="600.0" maxWidth="600.0" minHeight="600.0" minWidth="600.0" prefHeight="600.0" prefWidth="600.0" spacing="20.0" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoracolaborativa.HelloController">
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoracolaborativa.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-    <Label fx:id="welcomeText" text="Calculadora inicio" />
+    <Label fx:id="welcomeText" styleClass="operation-title" text="Calculadora inicio" />
     <Button onAction="#onHelloButtonClick" text="Sumar" />
-   <Button mnemonicParsing="false" text="Restar" />
-   <Button mnemonicParsing="false" text="Multiplicar" />
-   <Button mnemonicParsing="false" text="Dividir" />
+   <Button mnemonicParsing="false" onAction="#onRestarButtonClick" text="Restar" />
+   <Button mnemonicParsing="false" onAction="#onMultiplicarButtonClick" text="Multiplicar" />
+   <Button mnemonicParsing="false" onAction="#onDividirButtonClick" text="Dividir" />
 </VBox>

@@ -18,13 +18,20 @@ public class HelloController {
 
     @FXML
     protected void onRestarButtonClick() {
-        abrirVentana("restar.fxml", "Restar");
+        abrirVentana("resta.fxml", "Restar");
     }
 
     @FXML
     protected void onMultiplicarButtonClick() {
-        abrirVentana("multiplicar.fxml", "Multiplicar");
+        abrirVentana("multiplicacion.fxml", "Multiplicar");
     }
+
+    @FXML
+    protected void onDividirButtonClick() {
+        abrirVentana("Division.fxml", "Dividir");
+    }
+
+
 
     private void abrirVentana(String fxml, String titulo) {
         try {

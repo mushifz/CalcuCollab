@@ -1,20 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 
-<VBox spacing="10.0" alignment="CENTER" xmlns="http://javafx.com/javafx/17.0.12"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.example.calculadoracolaborativa.MultiplicarController">
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoracolaborativa.MultiplicarController">
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets bottom="20" left="20" right="20" top="20" />
     </padding>
 
-    <Label text="Multiplicación de dos números" />
-    <TextField fx:id="campo1" promptText="Número 1" />
-    <TextField fx:id="campo2" promptText="Número 2" />
-    <Button text="Multiplicar" onAction="#calcularMultiplicacion" />
-    <Label fx:id="resultado" text="Resultado: " />
-    <Button text="Volver" onAction="#volverMenu" />
+    <Label styleClass="operation-title" text="Multiplicación de dos números" />
+    <TextField fx:id="campo1" promptText="Número 1" styleClass="number-input" />
+    <TextField fx:id="campo2" promptText="Número 2" styleClass="number-input" />
+    <Button fx:id="multiplicarButton" onAction="#calcularMultiplicacion" styleClass="button operation-button" text="Multiplicar" />
+    <Label fx:id="resultado" styleClass="result-label" text="Resultado: " />
+    <Button onAction="#volverMenu" styleClass="button back-button" text="Volver" />
 </VBox>
