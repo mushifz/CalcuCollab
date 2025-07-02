@@ -6,6 +6,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.scene.Node;
+import javafx.scene.control.TextField;
+import java.io.IOException;
 
 public class HelloController {
     @FXML
@@ -20,6 +23,13 @@ public class HelloController {
     protected void onRestarButtonClick() {
         abrirVentana("restar.fxml", "Restar");
     }
+
+    // Dividir (Raul :v)
+    @FXML
+    protected void onDivisionButtonClick() {
+        abrirVentana("division.fxml", "Division");
+    }
+
 
     @FXML
     protected void onMultiplicarButtonClick() {

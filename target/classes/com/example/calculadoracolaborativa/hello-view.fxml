@@ -13,5 +13,5 @@
     <Button onAction="#onHelloButtonClick" text="Sumar" />
    <Button mnemonicParsing="false" text="Restar" />
    <Button mnemonicParsing="false" text="Multiplicar" />
-   <Button mnemonicParsing="false" text="Dividir" />
+   <Button mnemonicParsing="false" onAction="#onDivisionButtonClick" text="Dividir" />
 </VBox>
