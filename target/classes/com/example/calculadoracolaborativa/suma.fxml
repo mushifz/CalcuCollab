@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" maxHeight="400.0" maxWidth="400.0" minHeight="400.0" minWidth="400.0" prefHeight="400.0" prefWidth="400.0" spacing="20.0" stylesheets="@../../../styles/style.css" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculadoracolaborativa.SumaController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20" />
+    </padding>
+
+    <Label styleClass="operation-title" text="Suma de dos números" />
+    <TextField fx:id="campo1" promptText="Número 1" styleClass="number-input" />
+    <TextField fx:id="campo2" promptText="Número 2" styleClass="number-input" />
+    <Button fx:id="restarButton" onAction="#calcularResta" styleClass="button operation-button" text="Sumar" />
+    <Label fx:id="resultado" styleClass="result-label" text="Resultado: " />
+    <Button onAction="#volverMenu" styleClass="button back-button" text="Volver" />
+</VBox>
