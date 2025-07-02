@@ -34,7 +34,7 @@
         </font>
     </TextField>
 
-    <Button fx:id="btnDivide" onAction="#btnDivide" text="Dividir" textAlignment="CENTER">
+    <Button onAction="#btnDivide" text="Dividir" textAlignment="CENTER">
         <font>
             <Font name="Baskerville Old Face" size="18.0" />
         </font>
